@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diwakar Jha | Machine Learning Engineer & AI Systems Developer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Engineering portfolio of Diwakar Jha - MCA (AI & ML) Candidate at Chandigarh University, Aspiring ML Engineer, and GeeksforGeeks Campus Mantri. Empirical model benchmarks, time-series forecasting, and autonomous AI systems." />
+  <meta name="author" content="Diwakar Jha" />
+  <meta name="keywords" content="Diwakar Jha, Machine Learning Engineer, AI Developer, Deep Learning, Time-Series Forecasting, XGBoost, Keras, PyTorch, Chandigarh University, GeeksforGeeks" />
+  <meta name="theme-color" content="#080b12" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diwakar Jha | Machine Learning Engineer & AI Systems Developer" />
+  <meta property="og:description" content="Empirical ML benchmarks, time-series forecasting architectures, and autonomous AI systems." />
+  <meta property="og:type" content="website" />
+
+  <!-- SVG Favicon Data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f1523'/><rect x='3' y='3' width='94' height='94' rx='18' fill='none' stroke='%233b82f6' stroke-width='6'/><text x='50%' y='68%' font-family='sans-serif' font-weight='900' font-size='50' fill='%233b82f6' text-anchor='middle'>DJ</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Executive Styling -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Subtle Ambient Gradients -->
+  <div class="bg-ambient-grid"></div>
+  <div class="bg-ambient-glow"></div>
+
+  <!-- =======================================================================
+       EXECUTIVE STICKY NAVBAR
+       ======================================================================= -->
+  <header class="site-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Candidate Identity Logo -->
+      <a href="#hero" class="nav-brand-logo">
+        <div class="nav-brand-icon">DJ</div>
+        <div>
+          <div class="nav-brand-name">Diwakar Jha</div>
+          <div class="nav-brand-title">ML & AI SYSTEMS ENGINEER</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links-list d-none d-lg-flex">
+        <li><a href="#case-studies" class="nav-link-item">Case Studies</a></li>
+        <li><a href="#experience" class="nav-link-item">Experience</a></li>
+        <li><a href="#skills" class="nav-link-item">Skills Taxonomy</a></li>
+        <li><a href="#developer-cli" class="nav-link-item">Developer CLI</a></li>
+        <li><a href="#education" class="nav-link-item">Education</a></li>
+        <li><a href="#contact" class="nav-link-item">Contact</a></li>
+        <li><a href="resume.html" target="_blank" class="nav-link-item text-primary"><i class="bi bi-file-earmark-person me-1"></i>Resume <i class="bi bi-box-arrow-up-right small"></i></a></li>
+      </ul>
+
+      <!-- Action Items: Theme Switcher & Resume CTA -->
+      <div class="d-flex align-items-center gap-2">
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Theme">
+          <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+        </button>
+
+        <!-- View Resume CTA -->
+        <a href="resume.html" target="_blank" class="btn btn-secondary-tech d-none d-sm-inline-flex">
+          <i class="bi bi-file-earmark-person"></i> View Resume
+        </a>
+
+        <!-- Download PDF CTA -->
+        <a href="resume.pdf" download="Diwakar_Jha_Resume.pdf" class="btn btn-primary-tech">
+          <i class="bi bi-arrow-down-circle"></i> <span class="d-none d-md-inline">Download</span> PDF
+        </a>
+
+        <!-- Mobile Offcanvas Menu Trigger -->
+        <button class="theme-toggle-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavigationDrawer" aria-controls="mobileNavigationDrawer">
+          <i class="bi bi-list fs-5"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="offcanvas offcanvas-end text-bg-dark border-start border-secondary-subtle" tabindex="-1" id="mobileNavigationDrawer" style="background: var(--bg-surface) !important;">
+    <div class="offcanvas-header border-bottom border-secondary-subtle p-4">
+      <div class="d-flex align-items-center gap-2">
+        <div class="nav-brand-icon">DJ</div>
+        <div>
+          <div class="fw-bold">Diwakar Jha</div>
+          <div class="small text-muted font-mono">ML & AI SYSTEMS</div>
+        </div>
+      </div>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <ul class="list-unstyled d-flex flex-column gap-3 fs-5">
+        <li><a href="#hero" class="text-light text-decoration-none d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"><i class="bi bi-person text-primary"></i> Executive Profile</a></li>
+        <li><a href="#case-studies" class="text-light text-decoration-none d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"><i class="bi bi-folder-check text-primary"></i> Architectural Case Studies</a></li>
+        <li><a href="#experience" class="text-light text-decoration-none d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"><i class="bi bi-briefcase text-primary"></i> Professional Experience</a></li>
+        <li><a href="#skills" class="text-light text-decoration-none d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"><i class="bi bi-cpu text-primary"></i> Technical Skills Matrix</a></li>
+        <li><a href="#developer-cli" class="text-light text-decoration-none d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"><i class="bi bi-terminal text-primary"></i> Developer CLI Console</a></li>
+        <li><a href="#education" class="text-light text-decoration-none d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"><i class="bi bi-mortarboard text-primary"></i> Academic Credentials</a></li>
+        <li><a href="#contact" class="text-light text-decoration-none d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"><i class="bi bi-envelope text-primary"></i> Recruiter Contact</a></li>
+        <li><a href="resume.html" target="_blank" class="text-light text-decoration-none d-flex align-items-center gap-2"><i class="bi bi-file-earmark-person text-primary"></i> Standalone Resume Page <i class="bi bi-box-arrow-up-right small ms-auto text-muted"></i></a></li>
+      </ul>
+
+      <div class="pt-4 border-top border-secondary-subtle">
+        <a href="resume.pdf" download="Diwakar_Jha_Resume.pdf" class="btn btn-primary-tech w-100 py-3 text-center justify-content-center mb-3">
+          <i class="bi bi-download me-1"></i> Download Official Resume (PDF)
+        </a>
+        <div class="d-flex justify-content-center gap-4 fs-4">
+          <a href="https://github.com/Stfu-diwakar" target="_blank" class="text-secondary"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/diwakar-jha-064130229" target="_blank" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:diwakarjha42037@gmail.com" class="text-secondary"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- =====================================================================
+         HERO SECTION: EXECUTIVE VALUE PROPOSITION
+         ===================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-10 col-xl-9">
+            <!-- Candidate Status Pill -->
+            <div class="hero-role-pill">
+              <span class="hero-status-dot"></span>
+              <span>Available for Machine Learning Engineer & AI Developer Roles</span>
+            </div>
+
+            <!-- Main Value Headline -->
+            <h1 class="hero-headline">
+              Architecting <span class="text-gradient">Predictive ML Systems</span>, Time-Series Models, and Autonomous AI.
+            </h1>
+
+            <!-- Candidate Summary -->
+            <p class="hero-description">
+              I am <strong>Diwakar Jha</strong>, an <strong>MCA (Artificial Intelligence & Machine Learning)</strong> student at <strong>Chandigarh University</strong> and <strong>GeeksforGeeks Campus Mantri</strong>. With practical engineering experience across <strong>4 technical internships</strong>, I specialize in training high-performance machine learning models (<span class="font-mono text-primary fw-semibold">R² = 0.9870</span> on Smart Home Energy Forecasting), engineering agentic LLM workflows, and deploying robust backend REST APIs.
+            </p>
+
+            <!-- Primary CTAs -->
+            <div class="d-flex flex-wrap align-items-center gap-3">
+              <a href="resume.html" target="_blank" class="btn btn-primary-tech btn-lg px-4">
+                <i class="bi bi-file-earmark-person-fill"></i> View Official Resume
+              </a>
+              <a href="resume.pdf" download="Diwakar_Jha_Resume.pdf" class="btn btn-secondary-tech btn-lg px-4">
+                <i class="bi bi-arrow-down-circle"></i> Download PDF
+              </a>
+              <a href="#case-studies" class="btn btn-outline-tech btn-lg px-4">
+                <i class="bi bi-diagram-3-fill"></i> Explore Case Studies
+              </a>
+              <a href="https://github.com/Stfu-diwakar" target="_blank" class="btn btn-outline-tech py-2 px-3">
+                <i class="bi bi-github"></i> GitHub (18+ Repos)
+              </a>
+              <a href="https://www.linkedin.com/in/diwakar-jha-064130229" target="_blank" class="btn btn-outline-tech py-2 px-3">
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- High-Impact Quantitative Metrics Ribbon -->
+        <div class="metrics-ribbon">
+          <div class="row g-4">
+            <div class="col-6 col-md-3">
+              <div class="metric-item">
+                <div class="metric-value">0.9870 R²</div>
+                <div class="metric-label">Forecasting Accuracy</div>
+                <div class="metric-desc">XGBoost Load Prediction</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="metric-item">
+                <div class="metric-value">4 Roles</div>
+                <div class="metric-label">Industry Internships</div>
+                <div class="metric-desc">ML, GenAI, and BI Analytics</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="metric-item">
+                <div class="metric-value">18+ Repos</div>
+                <div class="metric-label">Open Source Codebases</div>
+                <div class="metric-desc">Python, Scikit-Learn, Streamlit, C++</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="metric-item">
+                <div class="metric-value">6 Months</div>
+                <div class="metric-label">Campus Leadership</div>
+                <div class="metric-desc">GeeksforGeeks Campus Mantri @ CU</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 1: ARCHITECTURAL CASE STUDIES & SYSTEMS
+         ===================================================================== -->
+    <section id="case-studies" class="border-top border-secondary-subtle">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-5">
+          <div>
+            <div class="section-tag"><i class="bi bi-cpu-fill"></i> Core Engineering</div>
+            <h2 class="section-title">Architectural <span class="text-gradient">Case Studies</span></h2>
+            <p class="section-subtitle mb-0">
+              In-depth technical breakdowns highlighting empirical modeling benchmarks, system architectures, and quantifiable outcomes.
+            </p>
+          </div>
+
+          <!-- Case Study Filters -->
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-outline-tech active" data-case-filter="all">All Systems</button>
+            <button class="btn btn-outline-tech" data-case-filter="Machine Learning">Machine Learning</button>
+            <button class="btn btn-outline-tech" data-case-filter="Generative AI">Generative AI</button>
+            <button class="btn btn-outline-tech" data-case-filter="Computer Vision">Computer Vision</button>
+            <button class="btn btn-outline-tech" data-case-filter="AI Safety">AI Forensics</button>
+            <button class="btn btn-outline-tech" data-case-filter="Natural Language">NLP</button>
+            <button class="btn btn-outline-tech" data-case-filter="Financial Analytics">FinTech</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Case Studies Container -->
+        <div id="caseStudiesContainer"></div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 2: PROFESSIONAL EXPERIENCE (GOOGLE XYZ FORMAT)
+         ===================================================================== -->
+    <section id="experience" class="border-top border-secondary-subtle">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-tag"><i class="bi bi-briefcase-fill"></i> Track Record</div>
+          <h2 class="section-title">Verified <span class="text-gradient">Professional Experience</span></h2>
+          <p class="section-subtitle mx-auto">
+            Practical engineering execution across 4 technical internships and student technical community leadership, structured using Google's impact formula: <em>Accomplished [X], as measured by [Y], by doing [Z]</em>.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-9">
+            <div class="experience-timeline" id="experienceTimeline"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 3: TECHNICAL SKILLS TAXONOMY
+         ===================================================================== -->
+    <section id="skills" class="border-top border-secondary-subtle">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-tag"><i class="bi bi-code-square"></i> Core Competencies</div>
+          <h2 class="section-title">Technical <span class="text-gradient">Skills Taxonomy</span></h2>
+          <p class="section-subtitle mx-auto">
+            Domain-specific competencies spanning machine learning modeling, scientific Python computing, backend service integration, and quantitative statistical logic.
+          </p>
+        </div>
+
+        <div class="row g-4" id="skillsMatrixGrid"></div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 4: DEVELOPER CLI CONSOLE
+         ===================================================================== -->
+    <section id="developer-cli" class="border-top border-secondary-subtle">
+      <div class="container">
+        <div class="text-center mb-4">
+          <div class="section-tag"><i class="bi bi-terminal-fill"></i> Engineer Mode</div>
+          <h2 class="section-title">Developer <span class="text-gradient">Workstation CLI</span></h2>
+          <p class="section-subtitle mx-auto">
+            Designed for hiring managers, technical leads, and engineering recruiters who prefer evaluating candidates via command-line interface.
+          </p>
+
+          <!-- Quick Command Shortcuts -->
+          <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('summary')">summary</button>
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('benchmarks')">benchmarks</button>
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('projects')">projects</button>
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('experience')">experience</button>
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('skills')">skills</button>
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('education')">education</button>
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('resume')">resume</button>
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('contact')">contact</button>
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('hire')">hire</button>
+            <button class="cli-cmd-badge" onclick="window.cliInstance.runCommandDirect('clear')">clear</button>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-9">
+            <div class="cli-window" id="developerCliContainer">
+              <div class="cli-titlebar">
+                <div class="cli-controls">
+                  <div class="cli-dot cli-dot-close"></div>
+                  <div class="cli-dot cli-dot-min"></div>
+                  <div class="cli-dot cli-dot-max"></div>
+                </div>
+                <div class="font-mono small text-secondary">diwakar@workstation: ~ (zsh / bash)</div>
+                <div class="font-mono small text-muted">Node.js v20 / Python 3.11</div>
+              </div>
+
+              <div class="cli-terminal-body"></div>
+
+              <div class="cli-input-row">
+                <span class="cli-prompt">diwakar@workstation:~$</span>
+                <input type="text" class="cli-input" placeholder="Type a command (e.g., 'benchmarks', 'skills', 'resume')..." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 5: EDUCATION & ACCREDITATIONS
+         ===================================================================== -->
+    <section id="education" class="border-top border-secondary-subtle">
+      <div class="container">
+        <!-- Academic Degrees -->
+        <div class="mb-5">
+          <div class="text-center mb-4">
+            <div class="section-tag"><i class="bi bi-mortarboard-fill"></i> Academic Credentials</div>
+            <h2 class="section-title">Education <span class="text-gradient">& Degrees</span></h2>
+          </div>
+          <div class="row g-4" id="educationContainer"></div>
+        </div>
+
+        <!-- Certifications & Job Simulations -->
+        <div>
+          <div class="text-center mb-4">
+            <div class="section-tag"><i class="bi bi-patch-check-fill"></i> Industry Accreditations</div>
+            <h2 class="section-title">Certifications <span class="text-gradient">& Accolades</span></h2>
+            <p class="section-subtitle mx-auto">
+              Professional simulations, hackathons, and certifications completed with organizations including Tata Group, Deloitte Australia, and Galgotias CET.
+            </p>
+          </div>
+          <div class="row g-3" id="certificationsGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 6: CONTACT & RECRUITER DISPATCH
+         ===================================================================== -->
+    <section id="contact" class="border-top border-secondary-subtle">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-tag"><i class="bi bi-envelope-fill"></i> Get in Touch</div>
+          <h2 class="section-title">Direct <span class="text-gradient">Recruiter Channels</span></h2>
+          <p class="section-subtitle mx-auto">
+            Actively interviewing for Machine Learning Engineer, AI Developer, and Data Science positions. Dispatch an inquiry or schedule an interview.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Dispatch Inquiry Form -->
+          <div class="col-lg-7">
+            <div class="contact-card-executive">
+              <h4 class="fw-bold mb-3"><i class="bi bi-send text-primary me-2"></i> Send Direct Message</h4>
+              <form id="executiveContactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label small text-muted font-mono">RECRUITER / SENDER NAME</label>
+                    <input type="text" id="contactName" class="form-control form-tech-input" placeholder="e.g. Sarah Jenkins" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small text-muted font-mono">WORK EMAIL</label>
+                    <input type="email" id="contactEmail" class="form-control form-tech-input" placeholder="e.g. s.jenkins@company.com" required />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small text-muted font-mono">SUBJECT</label>
+                    <input type="text" id="contactSubject" class="form-control form-tech-input" placeholder="e.g. Machine Learning Engineer Role @ Google / DeepMind" required />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small text-muted font-mono">MESSAGE</label>
+                    <textarea id="contactMessage" rows="4" class="form-control form-tech-input" placeholder="Provide details regarding the team, role requirements, or interview timeline..." required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-tech w-100 py-3">
+                      <i class="bi bi-envelope-arrow-up me-1"></i> Transmit Inquiry
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Direct Channels & Social Portals -->
+          <div class="col-lg-5">
+            <div class="contact-card-executive h-100">
+              <h4 class="fw-bold mb-3"><i class="bi bi-link-45deg text-primary me-2"></i> Verified Contact Channels</h4>
+
+              <a href="mailto:diwakarjha42037@gmail.com" class="direct-channel-link">
+                <div class="channel-icon"><i class="bi bi-envelope-at-fill"></i></div>
+                <div>
+                  <div class="fw-bold">diwakarjha42037@gmail.com</div>
+                  <div class="small text-muted">Primary Communication Channel</div>
+                </div>
+              </a>
+
+              <a href="tel:+918102617280" class="direct-channel-link">
+                <div class="channel-icon"><i class="bi bi-telephone-fill text-success"></i></div>
+                <div>
+                  <div class="fw-bold">+91 8102617280</div>
+                  <div class="small text-muted">Direct Mobile Phone</div>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/diwakar-jha-064130229" target="_blank" class="direct-channel-link">
+                <div class="channel-icon"><i class="bi bi-linkedin text-info"></i></div>
+                <div>
+                  <div class="fw-bold">LinkedIn Profile</div>
+                  <div class="small text-muted">in/diwakar-jha-064130229</div>
+                </div>
+              </a>
+
+              <a href="https://github.com/Stfu-diwakar" target="_blank" class="direct-channel-link">
+                <div class="channel-icon"><i class="bi bi-github"></i></div>
+                <div>
+                  <div class="fw-bold">GitHub Repositories</div>
+                  <div class="small text-muted">github.com/Stfu-diwakar (18 Repos)</div>
+                </div>
+              </a>
+
+              <div class="mt-4 pt-3 border-top border-secondary-subtle">
+                <button class="btn btn-outline-tech w-100 py-2" id="copyEmailBtn">
+                  <i class="bi bi-clipboard-check me-1"></i> Copy Email to Clipboard
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       EXECUTIVE FOOTER
+       ======================================================================= -->
+  <footer class="py-4 border-top border-secondary-subtle bg-surface text-center small">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="text-secondary">
+        © 2026 <strong>Diwakar Jha</strong>. Designed for Engineering Leadership & Technical Recruiters.
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="resume.html" target="_blank" class="text-secondary text-decoration-none">
+          <i class="bi bi-file-earmark-person me-1"></i> Standalone Resume
+        </a>
+        <a href="resume.pdf" download="Diwakar_Jha_Resume.pdf" class="text-primary text-decoration-none fw-semibold">
+          <i class="bi bi-file-earmark-arrow-down me-1"></i> Download PDF
+        </a>
+        <a href="#hero" class="text-secondary text-decoration-none">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       IN-PAGE RESUME VIEWER MODAL
+       ======================================================================= -->
+  <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content modal-tech shadow-lg">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-file-earmark-pdf-fill text-danger fs-4"></i>
+            <div>
+              <h5 class="modal-title fw-bold" id="resumeModalLabel">Diwakar Jha — Curriculum Vitae / Resume</h5>
+              <div class="small text-muted font-mono">MCA (AI & ML) · Machine Learning Engineer</div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <a href="resume.html" target="_blank" class="btn btn-sm btn-outline-tech">
+              <i class="bi bi-box-arrow-up-right me-1"></i> Open Standalone Page
+            </a>
+            <a href="resume.pdf" download="Diwakar_Jha_Resume.pdf" class="btn btn-sm btn-primary-tech">
+              <i class="bi bi-download"></i> Download PDF
+            </a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="modal-body p-0" style="min-height: 70vh;">
+          <iframe src="resume.pdf" style="width: 100%; height: 75vh; border: none;"></iframe>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <div class="small text-muted">
+            Format: Verified Standard Curriculum Vitae (PDF)
+          </div>
+          <div class="d-flex gap-2">
+            <a href="mailto:diwakarjha42037@gmail.com" class="btn btn-sm btn-secondary-tech">
+              <i class="bi bi-envelope"></i> Contact Diwakar
+            </a>
+            <button type="button" class="btn btn-sm btn-outline-tech" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

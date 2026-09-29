@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diwakar Jha — Curriculum Vitae / Resume</title>
+  
+  <meta name="description" content="Official Curriculum Vitae of Diwakar Jha - MCA (AI & ML) Candidate at Chandigarh University, Aspiring Machine Learning Engineer, and GeeksforGeeks Campus Mantri." />
+  <meta name="author" content="Diwakar Jha" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f1523'/><rect x='3' y='3' width='94' height='94' rx='18' fill='none' stroke='%233b82f6' stroke-width='6'/><text x='50%' y='68%' font-family='sans-serif' font-weight='900' font-size='50' fill='%233b82f6' text-anchor='middle'>DJ</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <style>
+    :root, [data-theme="dark"] {
+      --bg-body: #080b12;
+      --bg-surface: #0f1523;
+      --bg-surface-elevated: #161e32;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --color-primary: #3b82f6;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --sheet-bg: #ffffff;
+      --sheet-text: #0f172a;
+    }
+
+    [data-theme="light"] {
+      --bg-body: #f1f5f9;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #e2e8f0;
+      --border-subtle: rgba(0, 0, 0, 0.08);
+      --color-primary: #2563eb;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --sheet-bg: #ffffff;
+      --sheet-text: #0f172a;
+    }
+
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8, 11, 18, 0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 12px 0;
+    }
+
+    [data-theme="light"] .resume-nav {
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-action {
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+
+    .btn-download-primary {
+      background: var(--color-primary);
+      color: #fff !important;
+      border: none;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+    }
+
+    .btn-download-primary:hover {
+      background: #2563eb;
+      transform: translateY(-1px);
+    }
+
+    /* Embedded PDF Frame */
+    .pdf-frame-container {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      height: 82vh;
+      margin-bottom: 40px;
+    }
+
+    .pdf-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Clean Printable HTML Resume Sheet */
+    .resume-sheet {
+      background: var(--sheet-bg);
+      color: var(--sheet-text);
+      border-radius: 12px;
+      padding: 48px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      margin-bottom: 60px;
+    }
+
+    .resume-sheet h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 800; color: #0f172a; margin-bottom: 4px; }
+    .resume-sheet h2 { font-size: 1.15rem; font-weight: 700; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 4px; margin-top: 24px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .resume-sheet .role-title { font-weight: 700; font-size: 1rem; color: #0f172a; }
+    .resume-sheet .company-name { font-weight: 600; color: #2563eb; }
+    .resume-sheet .date-range { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #64748b; }
+    .resume-sheet ul { padding-left: 18px; margin-bottom: 12px; }
+    .resume-sheet li { font-size: 0.9rem; color: #334155; margin-bottom: 4px; }
+
+    @media print {
+      .resume-nav, .pdf-frame-container, .no-print { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .resume-sheet { box-shadow: none !important; padding: 0 !important; margin: 0 !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Navigation -->
+  <nav class="resume-nav">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <a href="index.html" class="btn-action">
+        <i class="bi bi-arrow-left"></i> Back to Portfolio
+      </a>
+
+      <div class="d-flex align-items-center gap-2">
+        <!-- Theme Toggle -->
+        <button class="btn-action" id="themeToggleBtn" title="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+        </button>
+
+        <!-- Print -->
+        <button class="btn-action" onclick="window.print()" title="Print Resume">
+          <i class="bi bi-printer"></i> Print
+        </button>
+
+        <!-- Download PDF Button -->
+        <a href="resume.pdf" download="Diwakar_Jha_Resume.pdf" class="btn-action btn-download-primary" id="downloadPdfBtn">
+          <i class="bi bi-download"></i> Download Latest PDF
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <!-- Recruiter Context Pill -->
+    <div class="d-flex flex-wrap align-items-center justify-content-between p-3 rounded-3 mb-4 no-print gap-2" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+      <div class="d-flex align-items-center gap-2 small">
+        <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1"><i class="bi bi-patch-check-fill me-1"></i> Verified Candidate Profile</span>
+        <span class="text-secondary d-none d-md-inline">Diwakar Jha · Master of Computer Applications (AI & ML)</span>
+      </div>
+      <div class="small font-mono text-muted">
+        <i class="bi bi-clock me-1"></i> Updated for 2026 Recruitment Cycle
+      </div>
+    </div>
+
+    <!-- Embedded High-Res PDF Viewer -->
+    <div class="pdf-frame-container no-print">
+      <iframe src="resume.pdf" class="pdf-frame" title="Diwakar Jha Resume PDF"></iframe>
+    </div>
+
+    <!-- Clean Universal HTML Document View (Ensures 100% mobile compatibility and instant readability) -->
+    <div class="resume-sheet">
+      <div class="d-flex flex-wrap justify-content-between align-items-start border-bottom pb-3 mb-3">
+        <div>
+          <h1>Diwakar Jha</h1>
+          <div class="fw-semibold text-secondary" style="font-size: 1.05rem;">
+            MCA (AI & ML) Student · Aspiring ML Engineer · GeeksforGeeks Campus Mantri
+          </div>
+          <div class="small text-muted mt-1">
+            Kharar, Punjab, India (Open to Relocation & Remote)
+          </div>
+        </div>
+        <div class="text-sm-end mt-2 mt-sm-0 small">
+          <div><i class="bi bi-envelope-fill text-primary me-1"></i> <a href="mailto:diwakarjha42037@gmail.com" class="text-decoration-none text-dark fw-semibold">diwakarjha42037@gmail.com</a></div>
+          <div><i class="bi bi-telephone-fill text-success me-1"></i> +91 8102617280</div>
+          <div><i class="bi bi-linkedin text-info me-1"></i> <a href="https://www.linkedin.com/in/diwakar-jha-064130229" target="_blank" class="text-decoration-none text-dark">diwakar-jha-064130229</a></div>
+          <div><i class="bi bi-github me-1"></i> <a href="https://github.com/Stfu-diwakar" target="_blank" class="text-decoration-none text-dark">github.com/Stfu-diwakar</a></div>
+        </div>
+      </div>
+
+      <!-- Professional Summary -->
+      <h2>Professional Summary</h2>
+      <p class="small text-secondary mb-3">
+        Motivated Master of Computer Applications (Artificial Intelligence and Machine Learning) student with practical experience in Python development, Machine Learning, backend automation, and AI-driven applications. Skilled in developing scalable software solutions, integrating APIs, building data-driven applications, and solving real-world problems through clean and efficient code. Strong understanding of software engineering fundamentals, object-oriented programming, databases, Git-based development, and collaborative project execution.
+      </p>
+
+      <!-- Technical Skills -->
+      <h2>Technical Skills</h2>
+      <div class="small mb-3">
+        <div class="mb-1"><strong>Programming Languages:</strong> Python, C++, C, Java, JavaScript (ES6+), SQL</div>
+        <div class="mb-1"><strong>Backend Development:</strong> Python, REST API Integration, Streamlit, Flask</div>
+        <div class="mb-1"><strong>Machine Learning & AI:</strong> Scikit-Learn, Pandas, NumPy, Time-Series Forecasting (XGBoost, Keras LSTM, ARIMA), NLP, TF-IDF, Gemini API, Anthropic Claude</div>
+        <div class="mb-1"><strong>Visualization & Tools:</strong> Matplotlib, Plotly, Chart.js, Git, GitHub, Jupyter Notebook, Google Colab, VS Code</div>
+        <div class="mb-1"><strong>Cloud & Platforms:</strong> Google Cloud Platform (GCP), Kaggle, Make.com, MongoDB</div>
+        <div><strong>Core Engineering:</strong> Data Structures & Algorithms, Object-Oriented Programming (OOP), Regression Diagnostics, Statistical Hypothesis Testing</div>
+      </div>
+
+      <!-- Work Experience -->
+      <h2>Professional Experience</h2>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div><span class="role-title">AI-Enabled Business Intelligence Intern</span> · <span class="company-name">TBI GEU</span></div>
+          <span class="date-range">Jun 2026 – Jul 2026 (2 mos) | India</span>
+        </div>
+        <ul>
+          <li>Evaluated complex charts, datasets, and numerical claims to drive data-driven decision-making across operational domains.</li>
+          <li>Verified calculations and assessed statistical validity, identifying conceptual errors in data interpretation to ensure accurate reporting.</li>
+          <li>Analyzed operational tasks involving quantitative logic and data summarization before finalizing reports.</li>
+        </ul>
+      </div>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div><span class="role-title">Campus Mantri (Campus Ambassador)</span> · <span class="company-name">GeeksforGeeks @ Chandigarh University</span></div>
+          <span class="date-range">Jan 2026 – Jun 2026 (6 mos) | Punjab, India</span>
+        </div>
+        <ul>
+          <li>Represented GeeksforGeeks as the official Campus Ambassador at Chandigarh University.</li>
+          <li>Organized technical events, coding contests, and promoted software development initiatives.</li>
+          <li>Coordinated with students to increase participation in algorithmic problem-solving and educational resources.</li>
+        </ul>
+      </div>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div><span class="role-title">Artificial Intelligence Intern</span> · <span class="company-name">Codec Technologies India</span></div>
+          <span class="date-range">Mar 2026 – Apr 2026 (2 mos) | Remote</span>
+        </div>
+        <ul>
+          <li>Developed Python-based AI applications for solving practical business problems.</li>
+          <li>Worked on data preprocessing, model development, and automation workflows.</li>
+          <li>Applied Machine Learning techniques using Python libraries for intelligent solutions.</li>
+        </ul>
+      </div>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div><span class="role-title">Generative AI Intern</span> · <span class="company-name">DecodeLabs</span></div>
+          <span class="date-range">Feb 2026 – Mar 2026 (2 mos) | Virtual</span>
+        </div>
+        <ul>
+          <li>Built automated workflows integrating modern AI technologies and LLM endpoints.</li>
+          <li>Developed backend logic for AI-powered content generation and summarization services.</li>
+          <li>Worked with API-based automation to improve workflow efficiency.</li>
+        </ul>
+      </div>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div><span class="role-title">Artificial Intelligence & Machine Learning Intern</span> · <span class="company-name">Enginow</span></div>
+          <span class="date-range">Jan 2026 – Feb 2026 (2 mos) | Remote</span>
+        </div>
+        <ul>
+          <li>Built Machine Learning models using Python and Scikit-Learn.</li>
+          <li>Performed data preprocessing, feature engineering, and model evaluation checking p-values and regression assumptions.</li>
+          <li>Improved prediction performance through model optimization techniques.</li>
+        </ul>
+      </div>
+
+      <!-- Key Projects -->
+      <h2>Key Technical Projects</h2>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div class="fw-bold">Smart Home Energy Forecasting & Optimization AI System (HEMS) <a href="https://github.com/Stfu-diwakar/Energy-Consumption-Forecasting-Optimization-AI" target="_blank" class="small text-primary text-decoration-none ms-1">[GitHub]</a></div>
+          <span class="date-range">2026</span>
+        </div>
+        <div class="small text-muted mb-1">Python, XGBoost, Keras Stacked LSTM, ARIMA, Flask, Pandas, Scikit-Learn</div>
+        <ul>
+          <li>Engineered end-to-end time-series forecasting model achieving <strong>R² = 0.9870</strong> and <strong>MAPE = 5.69%</strong> with XGBoost over 8,760 hourly observations.</li>
+          <li>Automated peak load shifting and EV charger rescheduling under Time-of-Use tariffs, reducing peak grid demand by <strong>30%–50%</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div class="fw-bold">Election Process Education Assistant & Civic AI Platform <a href="https://github.com/Stfu-diwakar/Election_process_edu" target="_blank" class="small text-primary text-decoration-none ms-1">[GitHub]</a></div>
+          <span class="date-range">2026</span>
+        </div>
+        <div class="small text-muted mb-1">Python, Flask, Google Gemini 2.5 Flash, Docker</div>
+        <ul>
+          <li>Architected full-stack civic platform containerized with Docker utilizing Gemini 2.5 Flash for factual voter guidance.</li>
+          <li>Built interactive democratic lifecycle timeline and responsive mobile-optimized UI.</li>
+        </ul>
+      </div>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div class="fw-bold">Convolutional Neural Network (CNN) Image Classifier <a href="https://github.com/Stfu-diwakar/Image_Classification_CNN" target="_blank" class="small text-primary text-decoration-none ms-1">[GitHub]</a></div>
+          <span class="date-range">2026</span>
+        </div>
+        <div class="small text-muted mb-1">TensorFlow, Keras, CNN, Streamlit, Python, NumPy, Pillow</div>
+        <ul>
+          <li>Constructed deep learning CNN image classifier with Conv2D/MaxPooling2D layers, dropout, and real-time Streamlit confidence calibration gauges.</li>
+        </ul>
+      </div>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div class="fw-bold">PIC CHECKER — AI Media Forensics & Deepfake Detection Engine <a href="https://github.com/Stfu-diwakar/PIC_CHECKER" target="_blank" class="small text-primary text-decoration-none ms-1">[GitHub]</a></div>
+          <span class="date-range">2026</span>
+        </div>
+        <div class="small text-muted mb-1">Python, FastAPI, Uvicorn, Metadata Analysis, REST API</div>
+        <ul>
+          <li>Developed high-throughput FastAPI REST API inspecting image metadata parameters for Stable Diffusion and Midjourney synthetic signatures.</li>
+        </ul>
+      </div>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div class="fw-bold">Real-Time NLP Spam & Threat Detection Engine <a href="https://github.com/Stfu-diwakar/Spam_or_ham" target="_blank" class="small text-primary text-decoration-none ms-1">[GitHub]</a></div>
+          <span class="date-range">2026</span>
+        </div>
+        <div class="small text-muted mb-1">Python, Scikit-Learn, TF-IDF Vectorization, NLP, Streamlit</div>
+        <ul>
+          <li>Developed machine learning text classification system with 98.4% accuracy and sub-15ms inference latency.</li>
+        </ul>
+      </div>
+
+      <!-- Education -->
+      <h2>Education</h2>
+      <div class="mb-2">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div><strong>Master of Computer Applications (MCA)</strong> — Artificial Intelligence & Machine Learning</div>
+          <span class="date-range">2025 – 2027</span>
+        </div>
+        <div class="small text-muted">Chandigarh University · Punjab, India</div>
+      </div>
+
+      <div class="mb-3">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div><strong>Bachelor of Computer Applications (BCA)</strong> — Computer Science</div>
+          <span class="date-range">2021 – 2024</span>
+        </div>
+        <div class="small text-muted">T. M. Bhagalpur University (T.M.B.U.) · Bihar, India</div>
+      </div>
+
+      <!-- Certifications -->
+      <h2>Certifications & Job Simulations</h2>
+      <div class="small">
+        <div class="mb-1">• Tata GenAI Powered Data Analytics Job Simulation (Forage, 2026)</div>
+        <div class="mb-1">• Deloitte Australia Technology Consulting Job Simulation (Forage, 2026)</div>
+        <div class="mb-1">• Mastering Machine Learning: From Beginner to Expert (2026)</div>
+        <div class="mb-1">• Certificate of Participation — GCET Hackathon (2026)</div>
+        <div class="mb-1">• Certificate of Participation — TATA Crucible Campus Quiz (2025)</div>
+        <div class="mb-1">• Foundations of Project Management (2025)</div>
+        <div>• CS105: Introduction to Python (2025)</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Theme toggle
+    const toggleBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    const savedTheme = localStorage.getItem('executive_portfolio_theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    toggleBtn.addEventListener('click', () => {
+      const cur = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('executive_portfolio_theme', next);
+      updateIcon(next);
+    });
+
+    function updateIcon(theme) {
+      if (themeIcon) {
+        themeIcon.className = theme === 'dark' ? 'bi bi-moon-stars-fill text-warning' : 'bi bi-sun-fill text-warning';
+      }
+    }
+  </script>
+</body>
+</html>

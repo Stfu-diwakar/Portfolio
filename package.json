@@ -1,0 +1,28 @@
+{
+  "name": "diwakar-jha-executive-portfolio",
+  "version": "2.0.0",
+  "description": "Executive Machine Learning & AI Systems Portfolio for Diwakar Jha (MCA AI & ML @ Chandigarh University)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Static assets ready for deployment'"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "diwakar-jha",
+    "machine-learning",
+    "artificial-intelligence",
+    "deep-learning",
+    "xgboost",
+    "time-series-forecasting",
+    "chandigarh-university",
+    "geeksforgeeks-campus-mantri"
+  ],
+  "author": "Diwakar Jha",
+  "license": "MIT"
+}

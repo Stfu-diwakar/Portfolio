@@ -1,0 +1,21 @@
+services:
+  # Option A: Deploy as a Render Web Service (Node.js)
+  - type: web
+    name: diwakar-portfolio
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+
+  # Option B: Deploy as a Render Static Site (Alternative Free Option)
+  # - type: web
+  #   name: diwakar-portfolio-static
+  #   env: static
+  #   buildCommand: ""
+  #   staticPublishPath: .
+  #   routes:
+  #     - type: rewrite
+  #       source: /*
+  #       destination: /index.html

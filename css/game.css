@@ -1,0 +1,383 @@
+/* ==========================================================================
+   GAME HUD, ACHIEVEMENTS, TROPHY DRAWER & GAMIFICATION STYLING
+   ========================================================================== */
+
+/* ==========================================================================
+   STICKY GAME HUD (Top Navigation Bar)
+   ========================================================================== */
+
+.game-hud-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(7, 9, 19, 0.85);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-glass);
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.hud-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.hud-brand-slot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.hud-brand-crest {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #070913;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-family: var(--font-arcade);
+  font-size: 0.85rem;
+  box-shadow: 0 0 12px var(--color-primary-glow);
+}
+
+.hud-brand-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.hud-brand-subtitle {
+  font-size: 0.72rem;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+
+/* Player Progression Gauge */
+.hud-player-gauge {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 4px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hud-level-badge {
+  font-family: var(--font-arcade);
+  font-size: 0.75rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #070913;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.hud-xp-track-wrap {
+  width: 130px;
+}
+
+.hud-xp-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  margin-bottom: 2px;
+}
+
+.hud-xp-track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.hud-xp-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-success));
+  border-radius: 999px;
+  box-shadow: 0 0 8px var(--color-primary-glow);
+  transition: width 0.5s ease;
+}
+
+/* HUD Control Actions */
+.hud-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hud-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.hud-icon-btn:hover {
+  background: rgba(0, 242, 254, 0.12);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: 0 0 12px var(--color-primary-glow);
+}
+
+.hud-badge-counter {
+  font-family: var(--font-arcade);
+  font-size: 0.65rem;
+  padding: 3px 6px;
+  border-radius: 6px;
+  background: rgba(246, 211, 101, 0.15);
+  border: 1px solid rgba(246, 211, 101, 0.35);
+  color: var(--color-warning);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Nav Links Pill */
+.hud-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hud-nav-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.hud-nav-link:hover {
+  color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* ==========================================================================
+   FLOATING XP NOTIFICATIONS & ACHIEVEMENT TOASTS
+   ========================================================================== */
+
+#xpToastContainer {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.xp-float-pill {
+  background: rgba(7, 9, 19, 0.95);
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 8px 24px rgba(0, 242, 254, 0.25);
+  border-radius: 999px;
+  padding: 8px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  animation: floatUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.xp-float-pill.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.xp-val {
+  font-family: var(--font-arcade);
+  font-size: 0.75rem;
+  color: var(--color-success);
+  text-shadow: 0 0 8px var(--color-success);
+}
+
+.xp-reason {
+  font-size: 0.85rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+#gameNotificationContainer {
+  position: fixed;
+  top: 75px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.game-toast-card {
+  width: 320px;
+  background: #0f1424;
+  border: 1px solid var(--border-glass);
+  border-radius: 14px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), 0 0 20px var(--color-primary-glow);
+  transform: translateX(120%);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+  pointer-events: auto;
+}
+
+.game-toast-card.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.toast-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(0, 242, 254, 0.12);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.toast-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--color-warning);
+}
+
+.toast-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   TROPHY CASE / BADGES MODAL
+   ========================================================================== */
+
+.trophy-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.25s ease;
+  margin-bottom: 10px;
+}
+
+.trophy-card.unlocked {
+  background: rgba(0, 242, 254, 0.05);
+  border-color: var(--border-glass);
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.15);
+}
+
+.trophy-card.locked {
+  opacity: 0.55;
+  filter: grayscale(80%);
+}
+
+.trophy-badge-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--color-warning);
+  flex-shrink: 0;
+}
+
+.trophy-card.unlocked .trophy-badge-icon {
+  background: rgba(246, 211, 101, 0.12);
+  box-shadow: 0 0 12px rgba(246, 211, 101, 0.35);
+}
+
+.trophy-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+}
+
+.trophy-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.trophy-reward {
+  font-size: 0.75rem;
+}
+
+/* ==========================================================================
+   ARCADE GAME OVER OVERLAY
+   ========================================================================== */
+
+.arcade-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(4, 6, 12, 0.92);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hud-xp-track-wrap {
+    display: none;
+  }
+  .hud-nav-links {
+    display: none;
+  }
+}
