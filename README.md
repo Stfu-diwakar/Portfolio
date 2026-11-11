@@ -1,114 +1,243 @@
-# 🚀 Diwakar Jha — Machine Learning Engineer & AI Systems Developer
-Link : https://energy-consumption-forecasting-cna1.onrender.com/
-A Google hiring-manager-grade engineering portfolio for **Diwakar Jha** (MCA AI & ML student @ Chandigarh University, Aspiring ML Engineer, and GeeksforGeeks Campus Mantri).
+# Diwakar Jha | AI & Machine Learning Developer
 
-Engineered to showcase architectural rigor, empirical modeling benchmarks ($R^2 = 0.9870$), production-ready full-stack case studies, and quantitative impact (Google XYZ format).
+<p align="center">
+  <strong>Building practical AI, machine learning, and full-stack solutions.</strong><br/>
+  MCA (AI & ML) student at Chandigarh University · Aspiring ML Engineer
+</p>
 
----
-
-## 🌟 Key Engineering Highlights
-
-- **📊 High-Impact Quantitative Metrics**:
-  - **0.9870 $R^2$ Score**: Achieved on Smart Home Energy Forecasting using XGBoost over 8,760 hourly telemetry observations.
-  - **4+ Industry Internships**: Machine Learning, Generative AI, and Business Intelligence roles at TBI GEU, Codec Technologies, DecodeLabs, and Enginow.
-  - **18+ Open Source Repositories**: Covering Python, Scikit-Learn, Streamlit, Flask, and C++.
-  - **6 Months Campus Leadership**: Official GeeksforGeeks Campus Mantri at Chandigarh University (January 2026 – June 2026).
-- **🏛️ In-Depth Architectural Case Studies & Live Deployments**:
-  - **Smart Home Energy Forecasting & Optimization AI (HEMS)**: Multi-model comparative pipeline (ARIMA baseline vs. XGBoost vs. Keras Stacked LSTM 24-hr sequence network) coupled with automated peak load shifting (30–50% peak demand reduction, 25–45% electricity cost savings).
-  - **Election Process Education Assistant & Civic AI Platform**: Docker-containerized civic education architecture featuring Google Gemini 2.5 Flash natural language assistant.
-  - **Convolutional Neural Network (CNN) Image Classifier**: Deep learning computer vision pipeline with Conv2D/MaxPooling2D, dropout regularization, and real-time Streamlit confidence meter.
-  - **PIC CHECKER — AI Media Forensics & Deepfake Detection Engine**: FastAPI REST microservice inspecting EXIF and PNG chunk metadata for Stable Diffusion and Midjourney parameters.
-  - **!-SPAM — Machine Learning Threat & Phishing Detection System**: NLP classification engine with TF-IDF vectorization, 98.4% accuracy, and sub-15ms inference latency.
-  - **Real-Time Stock Market Telemetry Dashboard**: Streamlit, Plotly, and yfinance engine with real-time candlestick telemetry and technical indicators.
-  - **Autonomous Mobile Robot Route Optimization**: A* Heuristic Search (Manhattan/Euclidean) vs BFS on dynamic 2D obstacle grid environments.
-  - **Smart Venue & Stadium Operations Assistant**: Folium spatial heatmaps, queue latency prediction, and Firebase synchronization.
-- **💼 Verified Work Experience (Google XYZ Format)**:
-  - *Accomplished [X], as measured by [Y], by doing [Z]* across all 5 career milestones.
-- **⌨️ Developer CLI Workstation Console**:
-  - Interactive terminal emulator tailored for technical interviewers (`summary`, `benchmarks`, `projects`, `experience`, `skills`, `resume`, `contact`, `hire`).
-- **📄 Dedicated Standalone Resume System & 1-Click PDF Download**:
-  - **Standalone Interactive Page (`resume.html`)**: Embeds full-fidelity PDF viewer, clean printable HTML document format, theme toggle, and print support.
-  - **1-Step Resume Updates**: To update credentials anytime, simply overwrite `resume.pdf` in the root folder. All links, embeds, and downloads update immediately across the entire site.
-  - **Direct Download**: Fast access to `resume.pdf` with download triggers.
-- **✨ Silky Smooth UI & Responsive Micro-Animations**:
-  - Subtle scroll-reveal (`IntersectionObserver`) with staggered grid transitions.
-  - High-precision dark/light theme switching with system persistence.
-  - Active navigation scroll-spy and soft-elevation card interactions.
-- **🌓 Dual Dark / Light Theme Engine**:
-  - Modern, accessible, high-contrast design inspired by Google DeepMind and Linear.
+<p align="center">
+  <a href="https://github.com/Stfu-diwakar"><img src="https://img.shields.io/badge/GitHub-Explore%20Projects-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+  <a href="https://energy-consumption-forecasting-cna1.onrender.com/"><img src="https://img.shields.io/badge/Live%20Demo-Energy%20Forecasting-0F9D58?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Energy Forecasting live demo"/></a>
+  <a href="mailto:"><img src="https://img.shields.io/badge/Contact-Get%20in%20Touch-4A6CF7?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact"/></a>
+</p>
 
 ---
 
-## 📄 How to Update Your Resume Anytime
+## About
 
-The portfolio is built with a decoupled, modular resume architecture:
+I’m **Diwakar Jha**, an AI & Machine Learning postgraduate student focused on building useful, explainable, and deployable software. My work spans machine learning, NLP, computer vision, generative AI, data applications, and full-stack development.
 
-1. Export your latest resume as a PDF.
-2. Rename it to **`resume.pdf`** (or overwrite `resume.pdf` in the project root directory).
-3. That's it! 
-   - `resume.html` (the dedicated resume page) will display the new PDF.
-   - All download buttons on the navbar, hero section, developer CLI, and footer will instantly serve your new resume.
-   - No HTML or code edits needed.
+This portfolio brings together selected projects, engineering experiments, experience, skills, and a downloadable resume. It is designed to help recruiters, collaborators, and fellow developers quickly understand what I build and how I approach technical problems.
 
----
+## At a Glance
 
-## 🚀 Instant Deployment on Render
-
-This repository is pre-configured for seamless deployment on [Render](https://render.com):
-
-### Option 1: Static Site (Recommended & Free)
-1. Push this repository to GitHub.
-2. In [Render Dashboard](https://dashboard.render.com), click **New +** $\rightarrow$ **Static Site**.
-3. Select your repository.
-4. Settings:
-   - **Name**: `diwakar-portfolio`
-   - **Branch**: `main`
-   - **Build Command**: *(leave blank)*
-   - **Publish Directory**: `.`
-5. Click **Create Static Site**.
-
-### Option 2: Web Service (Node.js)
-1. In Render, select **New +** $\rightarrow$ **Web Service**.
-2. Select your repository. Render automatically reads `package.json`:
-   - **Runtime**: `Node`
-   - **Build Command**: `npm install`
-   - **Start Command**: `npm start`
-   - **Health Check Path**: `/healthz`
-3. Click **Create Web Service**.
+| Focus | Highlights |
+|---|---|
+| Education | MCA in Artificial Intelligence & Machine Learning, Chandigarh University |
+| Core interests | Machine Learning, NLP, Generative AI, Computer Vision |
+| Development | Python, Streamlit, Flask, FastAPI, JavaScript |
+| Model evaluation | Smart Home Energy Forecasting: reported XGBoost R² of **0.9870** |
+| Community | GeeksforGeeks Campus Mantri, Chandigarh University |
+| Open source | Projects and experiments across AI/ML and software development |
 
 ---
 
-## 💻 Local Execution
+## Featured Projects
 
-Run locally with Node.js:
+A selection of projects demonstrating applied machine learning, software engineering, and problem-solving.
+
+### 1. Smart Home Energy Consumption Forecasting & Optimization AI
+
+A time-series forecasting and energy optimization project that compares statistical and machine learning approaches to predict household energy consumption.
+
+- Models: ARIMA, XGBoost, and LSTM.
+- Data: 8,760 hourly observations.
+- Reported XGBoost performance: **R² = 0.9870**.
+- Includes forecasting visualizations and peak-demand optimization concepts.
+- **[Open live demo](https://energy-consumption-forecasting-cna1.onrender.com/)**
+
+### 2. Election Process Education Assistant
+
+A civic-education application designed to make election-related information easier to understand.
+
+- Natural-language question answering powered by Google Gemini.
+- Containerized application architecture.
+- Focus on accessible civic information and guided learning.
+
+### 3. CNN Image Classifier
+
+A computer-vision project that classifies images using a convolutional neural network.
+
+- Conv2D and MaxPooling2D layers.
+- Dropout regularization.
+- Streamlit interface with prediction confidence visualization.
+
+### 4. PIC CHECKER — AI Media Forensics
+
+A media-inspection tool that extracts image metadata to help identify clues about how an image may have been created.
+
+- FastAPI-based REST service.
+- EXIF and PNG metadata inspection.
+- Detects available metadata associated with tools such as Stable Diffusion and Midjourney.
+
+### 5. !-SPAM — Spam & Phishing Detection
+
+A text-classification project for identifying potentially unwanted or malicious messages.
+
+- NLP preprocessing and TF-IDF feature extraction.
+- Machine learning classification pipeline.
+- Reported model accuracy: **98.4%** on the project's evaluation data.
+
+### 6. Real-Time Stock Market Dashboard
+
+A financial-data visualization application built to explore market movement and technical indicators.
+
+- Streamlit and Plotly dashboard.
+- Market data retrieval with yfinance.
+- Candlestick charts and technical indicators.
+
+### 7. Autonomous Mobile Robot Route Optimization
+
+A pathfinding project comparing search strategies in a dynamic 2D grid environment.
+
+- A* with Manhattan and Euclidean heuristics.
+- Breadth-First Search baseline.
+- Obstacle-aware route exploration.
+
+### 8. Smart Venue & Stadium Operations Assistant
+
+A concept application for visualizing venue operations and exploring crowd-flow insights.
+
+- Folium-based spatial visualizations.
+- Queue-latency prediction concepts.
+- Firebase synchronization.
+
+---
+
+## Experience & Community
+
+My experience includes internships and practical learning across AI/ML, Generative AI, and business intelligence, along with student-community involvement.
+
+- **GeeksforGeeks Campus Mantri** — Chandigarh University (January 2026 – June 2026).
+- **Internship experience** — AI/ML, Generative AI, and Business Intelligence roles and training with organizations including TBI-GEU, Codec Technologies, DecodeLabs, and Enginow.
+
+For role-specific responsibilities, outcomes, and dates, please refer to the experience section of the portfolio and my resume.
+
+---
+
+## Technical Skills
+
+| Area | Tools & Technologies |
+|---|---|
+| Programming | Python, SQL, C++, JavaScript |
+| Machine Learning | Scikit-learn, XGBoost, TensorFlow / Keras |
+| NLP & Generative AI | Sentence Transformers, spaCy, TF-IDF, LLM APIs |
+| Computer Vision | CNNs, image processing, metadata analysis |
+| Web & APIs | Streamlit, Flask, FastAPI, HTML, CSS |
+| Data & Visualization | NumPy, Pandas, Plotly, Matplotlib |
+| Databases & Tools | SQLite, Firebase, Git, GitHub, Docker |
+
+---
+
+## Portfolio Features
+
+- **Project showcase** — selected AI/ML and software projects with technical context.
+- **Developer terminal** — an interactive command-line-style interface with commands such as `summary`, `projects`, `skills`, `benchmarks`, `resume`, and `contact`.
+- **Dedicated resume page** — standalone resume view with PDF display, download, and print support.
+- **Responsive interface** — layouts designed for desktop and mobile screens.
+- **Theme switching** — dark and light appearance options.
+- **Motion details** — scroll reveals, navigation tracking, and subtle card interactions.
+
+## Resume
+
+The repository includes a dedicated `resume.html` page and a PDF resume.
+
+To update the resume:
+
+1. Export the latest resume as a PDF.
+2. Name the file `resume.pdf`.
+3. Replace the existing `resume.pdf` in the repository root.
+4. Commit and push the change.
+
+The portfolio's resume page and download links are configured to use this file. Keep the filename unchanged so existing links continue to work.
+
+---
+
+## Run Locally
+
+### Requirements
+
+- Node.js and npm (for the Node server), or Python (for the simple static server).
+
+### Option 1: Node.js
+
 ```bash
+npm install
 npm start
 ```
-Navigate to **`http://localhost:3000`** in your browser.
 
-Or with Python:
+Open [http://localhost:3000](http://localhost:3000).
+
+### Option 2: Python
+
+From the repository root, run:
+
 ```bash
 python -m http.server 8000
 ```
-Navigate to **`http://localhost:8000`**.
+
+Open [http://localhost:8000](http://localhost:8000).
 
 ---
 
-## 📂 Repository Structure
+## Deployment
 
-```
-├── index.html                  # Executive semantic HTML5 architecture
-├── resume.html                 # Dedicated standalone resume page (PDF + HTML sheet)
-├── resume.pdf                  # Canonical candidate resume PDF (swappable anytime)
-├── Diwakar_Jha_Resume.pdf      # Original backup resume PDF
-├── server.js                   # Zero-dependency production HTTP server (Render-ready)
-├── package.json                # Project & deployment configuration
-├── render.yaml                 # Render Infrastructure-as-Code blueprint
-├── .gitignore                  # Git ignore rules
+This repository includes Render configuration files.
+
+### Render Static Site
+
+1. Push the repository to GitHub.
+2. In the [Render Dashboard](https://dashboard.render.com/), choose **New → Static Site**.
+3. Connect this repository and select the `main` branch.
+4. Set the publish directory to `.`.
+5. Leave the build command empty if the site is plain static HTML/CSS/JS.
+6. Deploy the site.
+
+### Render Web Service
+
+If deploying with the included Node server:
+
+1. Create a new **Web Service** in Render and connect the repository.
+2. Select the Node runtime.
+3. Use `npm install` as the build command.
+4. Use `npm start` as the start command.
+5. Deploy and verify the health-check endpoint if configured.
+
+Choose the deployment type that matches the repository's current configuration.
+
+---
+
+## Repository Structure
+
+```text
+.
+├── index.html                  # Main portfolio page
+├── resume.html                 # Standalone resume page
+├── resume.pdf                  # Current resume PDF
+├── Diwakar_Jha_Resume.pdf      # Backup resume PDF
+├── server.js                   # Node.js HTTP server
+├── package.json                # Node project configuration
+├── render.yaml                 # Render deployment blueprint
 ├── css/
-│   └── style.css               # Clean executive design system with scroll-reveal & smooth UI
+│   └── style.css               # Portfolio styles
 └── js/
-    ├── data.js                 # Structured candidate data, benchmarks & metrics
-    ├── terminal.js             # Developer CLI console emulator
-    └── main.js                 # Theme engine, scroll reveal, scroll spy & controller
+    ├── data.js                 # Portfolio content and metrics
+    ├── terminal.js             # Interactive terminal
+    └── main.js                 # UI behavior and interactions
 ```
+
+---
+
+## Connect
+
+I’m interested in opportunities and collaborations involving **AI/ML, NLP, Generative AI, and software development**.
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/diwakar-jha-064130229/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/Stfu-diwakar"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+</p>
+
+<p align="center">
+  <strong>Thanks for visiting!</strong><br/>
+  <sub>Built with curiosity, continuous learning, and a passion for applied AI.</sub>
+</p>
